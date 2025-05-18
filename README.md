@@ -16,6 +16,8 @@ Welcome to the Open Agent Platform (OAP) JavaScript AI Agent project! This repos
 
 ## Repository Structure
 
+- `README.md` — Project overview, quick start, contribution guidelines, and key information for all users and AI assistants.
+- `LICENSE` — Project license and terms of use.
 - `discussion_summary.md` — In-depth summary of the setup discussion, design decisions, code examples, and step-by-step instructions.
 - `graph.js` (see code example in `discussion_summary.md`) — Main agent logic and integration with MCP tools.
 - (Add your own files and features as needed!)
@@ -57,11 +59,79 @@ Welcome to the Open Agent Platform (OAP) JavaScript AI Agent project! This repos
 
 ## Project Rhythm
 
-- All changes are made in feature branches (e.g., `rhythm-update`) before merging to main.
-- Each logical change is committed with a clear, descriptive message.
-- Major discussions and decisions are summarized in `discussion_summary.md`.
-- Code and workflow are tested before merging.
-- Changes are reviewed for clarity and correctness.
+This project follows a clear and collaborative development rhythm to ensure code quality, clarity, and smooth teamwork for both human and AI contributors:
+
+1. **Start from Main (unless already on a feature branch):**
+
+   If you are not already on a feature branch, switch to `main`:
+
+   ```bash
+   git checkout main
+   ```
+
+   Pull the latest changes to ensure your local repository is up to date:
+
+   ```bash
+   git pull origin main
+   ```
+
+   Ensure your working directory is clean (no uncommitted changes):
+
+   ```bash
+   git status
+   ```
+
+2. **Create a Feature Branch:**
+
+   Create and switch to a new branch for your feature or fix:
+
+   ```bash
+   git checkout -b your-feature-name
+   ```
+
+3. **Develop in Isolation:**
+
+   Make your changes, commits, and tests on the feature branch only.
+   Write clear, descriptive commit messages for each logical change:
+
+   ```bash
+   git add .
+   git commit -m "Describe your change clearly"
+   ```
+
+4. **Documentation:**
+
+   Summarize major discussions, decisions, and design rationale in `discussion_summary.md` as needed.
+   Update `README.md` if project-level instructions or structure change.
+
+5. **Testing:**
+
+   Ensure all code and workflows are tested before merging.
+
+   ```bash
+   npm test
+   ```
+
+6. **Review:**
+
+   Review your changes for clarity, correctness, and completeness.
+   Open a pull request for review and feedback.
+
+7. **Merge:**
+
+   After approval, merge your feature branch into `main`.
+   Pull the latest changes to your local `main` after merging.
+
+---
+
+**Summary:**
+
+- Always branch from an up-to-date `main` (unless already on a feature branch).
+- Keep your work isolated, well-documented, and tested.
+- Collaborate through clear commits, reviews, and pull requests.
+- Use `discussion_summary.md` for technical context and `README.md` for high-level project info.
+
+*This rhythm ensures a robust, maintainable, and welcoming project for both humans and AI assistants.*
 
 ## Collaboration & Contribution
 

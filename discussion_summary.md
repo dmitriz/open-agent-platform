@@ -1,12 +1,12 @@
 # Rhythm
 
-This project follows a clear rhythm for development and documentation:
+This project follows a clear rhythm for development and collaboration:
 
-1. **Branching**: All changes are made in feature branches (e.g., `rhythm-update`) before merging to main.
-2. **Commits**: Each logical change is committed with a clear, descriptive message.
-3. **Documentation**: All major discussions and decisions are summarized in `discussion_summary.md`.
-4. **Testing**: Code and workflow are tested before merging.
-5. **Review**: Changes are reviewed for clarity and correctness.
+- **Branching:** All changes are made in feature branches (e.g., `rhythm-update`) before merging to main.
+- **Commits:** Each logical change is committed with a clear, descriptive message.
+- **Documentation:** Major discussions and decisions are summarized in `discussion_summary.md`.
+- **Testing:** Code and workflow are tested before merging.
+- **Review:** Changes are reviewed for clarity and correctness.
 
 ---
 
