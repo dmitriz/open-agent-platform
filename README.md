@@ -17,7 +17,6 @@ Welcome to the Open Agent Platform (OAP) JavaScript AI Agent project! This repos
 ## Repository Structure
 
 - `README.md` — Project overview, quick start, contribution guidelines, and key information for all users and AI assistants.
-- `LICENSE` — Project license and terms of use.
 - `discussion_summary.md` — In-depth summary of the setup discussion, design decisions, code examples, and step-by-step instructions.
 - `graph.js` (see code example in `discussion_summary.md`) — Main agent logic and integration with MCP tools.
 - (Add your own files and features as needed!)
@@ -152,10 +151,6 @@ This project follows a clear and collaborative development rhythm to ensure code
 
 - All major setup steps, code examples, and design decisions are in `discussion_summary.md`.
 - For a quick overview, see the "Project Rhythm" and "Setup Steps" sections.
-
-## License
-
-MIT (or specify your license here)
 
 ---
 
