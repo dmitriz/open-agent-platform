@@ -1,3 +1,17 @@
+# Rhythm
+
+This project follows a clear rhythm for development and documentation:
+
+1. **Branching**: All changes are made in feature branches (e.g., `rhythm-update`) before merging to main.
+2. **Commits**: Each logical change is committed with a clear, descriptive message.
+3. **Documentation**: All major discussions and decisions are summarized in `discussion_summary.md`.
+4. **Testing**: Code and workflow are tested before merging.
+5. **Review**: Changes are reviewed for clarity and correctness.
+
+---
+
+For more details, see `discussion_summary.md`.
+
 # LangGraph JavaScript Setup Discussion Summary
 
 **Date**: May 18, 2025, 09:09 AM +07  
@@ -489,4 +503,4 @@ To upload to GitHub:
    git add discussion_summary.md
    git commit -m "Add discussion summary for LangGraph setup"
    git push origin main
-
+   ```
