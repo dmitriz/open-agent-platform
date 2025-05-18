@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "settings": {
+    "quality": {
+      "requireLintChecks": true,
+      "requireWarningFree": true,
+      "fixAllWarningsBeforeCompleting": true,
+      "reportUnfixableWarnings": true,
+      "preventContentRemoval": true,
+      "enforceLanguageSpecifiersInCodeBlocks": true
+    },
+    "behaviors": {
+      "checkErrorsAfterEachEdit": true,
+      "alwaysYieldCleanResults": true,
+      "preserveExistingContent": true
+    },
+    "documentation": {
+      "enforceMarkdownStandards": true,
+      "preventDuplicateSections": true,
+      "requireCompleteContent": true
+    }
+  },
+  "rules": [
+    {
+      "name": "Always check for warnings after edits",
+      "description": "Use get_errors tool after every file edit",
+      "severity": "mandatory"
+    },
+    {
+      "name": "Fix all warnings before completing tasks",
+      "description": "Never leave unresolved warnings in the codebase",
+      "severity": "mandatory"
+    },
+    {
+      "name": "Preserve content",
+      "description": "Never remove content unless explicitly instructed",
+      "severity": "mandatory"
+    },
+    {
+      "name": "Report unfixable warnings",
+      "description": "If a warning cannot be fixed, explain it clearly",
+      "severity": "mandatory"
+    },
+    {
+      "name": "No duplicate content",
+      "description": "Never leave duplicate sections in documentation",
+      "severity": "mandatory"
+    },
+    {
+      "name": "Language specifiers",
+      "description": "Always use correct language specifiers in code blocks",
+      "severity": "mandatory"
+    }
+  ],
+  "enforcement": {
+    "scope": "repository",
+    "applyToAllFiles": true
+  }
+}
