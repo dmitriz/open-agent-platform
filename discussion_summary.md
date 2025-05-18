@@ -1,25 +1,27 @@
 # Rhythm
 
-This pr## Overview
+## Overview
 
 This document summarizes a discussion on setting up an AI agent using LangGraph.js in a JavaScript-only environment on WSL, avoiding Python's complexities. Topics included Python vs. JavaScript comparisons, local model hosting, MCP server usage (Arcade, Tavily Search), testing, and a minimal "Hello World" agent setup.
 
 ## Architecture Diagram
 
+> **Note:** The architecture diagram below is also present in `README.md`. To avoid duplication and ensure easier maintenance, consider referencing the diagram in one document rather than including it in both. If you choose to keep the diagram here for context, please synchronize any future changes across both files.
+
 ```mermaid
 graph TD
-    A[User] -->|Input| B[OAP Web Interface]
-    B -->|Request| C[LangGraph.js Server]
-    C -->|Query| D[LLM Service - Gemini/Ollama]
-    C -->|Tool Call| E[Arcade MCP Server]
-    C -->|Search Request| F[Tavily Search MCP]
-    E -->|Email| G[Gmail API]
-    E -->|Data Query| H[SQLite Database]
-    E -->|File Operation| I[Local File System]
-    F -->|Web Search| J[Tavily API]
-    C -->|Response| B
-    B -->|Output| A
-```
+  A[User] -->|Input| B[OAP Web Interface]
+  B -->|Request| C[LangGraph.js Server]
+  C -->|Query| D[LLM Service - Gemini/Ollama]
+  C -->|Tool Call| E[Arcade MCP Server]
+  C -->|Search Request| F[Tavily Search MCP]
+  E -->|Email| G[Gmail API]
+  E -->|Data Query| H[SQLite Database]
+  E -->|File Operation| I[Local File System]
+  F -->|Web Search| J[Tavily API]
+  C -->|Response| B
+  B -->|Output| A
+## Initial Setup and Concerns
 
 ## Initial Setup and Concerns follows a clear rhythm for development and collaboration
 
@@ -488,44 +490,46 @@ module.exports = { buildGraph, runLlm };
   ```
 
 - **Interact:**
+  > **Note:** The sample output examples below are also present in `README.md`. To avoid duplication and simplify maintenance, consider referencing the examples in one document and maintaining them in a single location. If you choose to keep the examples here for context, ensure any updates are synchronized across both files.
+
   - Terminal: `npm run invoke -- "send email"`
-  - Web: <http://localhost:3000>
+    - Web: <http://localhost:3000>
 
-## Sample Output
+  ## Sample Output
 
-Here are examples of what the agent can do:
+  Here are examples of what the agent can do:
 
-### Basic Conversation
+  ### Basic Conversation
 
-```text
-User: Tell me a joke
-Agent: Why don't scientists trust atoms? Because they make up everything!
-```
+  ```text
+  User: Tell me a joke
+  Agent: Why don't scientists trust atoms? Because they make up everything!
+  ```
 
-### Email Tool Usage
+  ### Email Tool Usage
 
-```text
-User: Send an email to the team about the project status
-Agent: I'll send an email about the project status. What specific details should I include?
-User: Mention we've completed the documentation and the agent is working well
-Agent: Email sent to team@example.com with subject "Project Status Update". 
-The email mentioned the completion of documentation and the successful agent implementation.
-```
+  ```text
+  User: Send an email to the team about the project status
+  Agent: I'll send an email about the project status. What specific details should I include?
+  User: Mention we've completed the documentation and the agent is working well
+  Agent: Email sent to team@example.com with subject "Project Status Update". 
+  The email mentioned the completion of documentation and the successful agent implementation.
+  ```
 
-### Database Query 
+  ### Database Query 
 
-```text
-User: How many users do we have in the database?
-Agent: I've queried the database. We currently have 42 users registered in the system.
-```
+  ```text
+  User: How many users do we have in the database?
+  Agent: I've queried the database. We currently have 42 users registered in the system.
+  ```
 
-### File Operations
+  ### File Operations
 
-```text
-User: Create a report on our progress
-Agent: I've created a report file "progress_report.txt" with a summary of our recent achievements
-and current project status.
-```
+  ```text
+  User: Create a report on our progress
+  Agent: I've created a report file "progress_report.txt" with a summary of our recent achievements
+  and current project status.
+  ```
 
 ## Conclusion and Next Steps
 

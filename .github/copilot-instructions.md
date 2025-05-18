@@ -31,6 +31,6 @@ These instructions guide GitHub Copilot (and other AI assistants) to ensure ever
 
 ## Reference Configuration
 
-These behaviors are supported by the configuration in `.github/copilot/command-settings.json` and the linting rules in `.linting-rules.md`.
+These behaviors are supported by the linting rules in `.linting-rules.md`.
 
 Ensure all contributions adhere to these instructions to maintain high-quality standards across the project.
