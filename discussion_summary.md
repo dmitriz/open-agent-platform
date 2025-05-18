@@ -10,9 +10,7 @@ This project follows a clear rhythm for development and collaboration:
 
 ---
 
-For more details, see `discussion_summary.md`.
-
-# LangGraph JavaScript Setup Discussion Summary
+## LangGraph JavaScript Setup Discussion Summary
 
 **Date**: May 18, 2025, 09:09 AM +07  
 **Participants**: Human, Grok 3 (AI)
